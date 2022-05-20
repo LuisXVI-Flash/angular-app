@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+    angular-app:
+      build:
+        context: ${FE_APP_PATH}
+        dockerfile: ${FE_APP_PATH}/Dockerfile
+      volumes:
+        - ${FE_APP_PATH}:/app
+      ports:
+        - "80:80"
