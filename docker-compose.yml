@@ -8,4 +8,4 @@ services:
       volumes:
         - ${FE_APP_PATH}:/app
       ports:
-        - "80:80"
+        - 4200:4200
